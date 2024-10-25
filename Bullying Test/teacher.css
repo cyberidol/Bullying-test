@@ -1,0 +1,315 @@
+/* Resets margin, padding, and sets box-sizing to border-box for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for body element */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7b4b9; /* Light pink background */
+    color: #333;
+}
+
+/* Container to center content and set maximum width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Menu bar styling */
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-menu ul li {
+    margin-left: 20px;
+}
+
+.nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Hover effect for navigation links */
+.nav-menu ul li a:hover {
+    color: #007BFF; /* Changes text color to blue on hover */
+}
+
+
+
+
+
+section {
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 1000px;
+}
+
+
+/* Heading styles */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007BFF;
+    max-width: 100%;
+}
+
+/* Styling for the course list container */
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Styling for individual course items */
+.course-item {
+    background-color: #f7e8e8; /* Light pink background */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.course-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.course-item h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #007BFF;
+}
+
+.course-item p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Resource list styles */
+.resource-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual resource list items */
+.resource-list li {
+  margin-bottom: 18px;
+}
+
+.resource-list a {
+    font-size: 18px;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.resource-list a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
+/* Footer styling */
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+/* Footer content styling with two sections */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Language and social media sections in footer */
+.languages, .follow-us {
+    text-align: left;
+}
+
+/* Footer headings */
+.languages h4, .follow-us h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer lists */
+.languages ul, .follow-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Footer list items */
+.languages ul li, .follow-us ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer links */
+.languages ul li a, .follow-us ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for footer links */
+.languages ul li a:hover, .follow-us ul li a:hover {
+    color: #007BFF;
+}
+
+/* Social media icon styling */
+.social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icons li a {
+    font-size: 1.5rem;
+}
+
+/* Hover effect for social media icons */
+.social-icons li a:hover {
+    color: #007BFF;
+}
+
+/* Footer text */
+.footer p {
+    font-size: 0.9rem;
+}
+
+.footer h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Star rating container */
+.rating {
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  flex-direction: row-reverse; /* Reverse order for visual appeal */
+}
+
+/* Hide radio buttons */
+.rating input {
+  display: none;
+}
+
+/* Styling for star labels */
+.rating label {
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect to highlight stars */
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #FFD700; /* Gold color on hover */
+}
+
+/* When a star is selected, apply gold color */
+.rating input:checked ~ label {
+  color: #FFD700;
+}
+
+/* Styling for the selected stars */
+.rating input:checked + label,
+.rating input:checked + label ~ label {
+  color: #FFD700;
+}
+
+/* Result styling for the rating feedback */
+.rating-result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #FFD700;
+}
+
+/* Media query for screens wider than 800px */
+@media screen and (min-width: 800px){
+    /* Flexbox layout for larger screens */
+    .training-resource-container {
+        display: flex;
+        gap: 20px; 
+    }
+
+    
+    #training h2{
+        flex: 2;
+    }
+
+    /* Resource section heading style with responsive font size */
+    #resources h2{
+        flex: 1;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis; /* Truncate long text */
+        font-size: calc(3px + 2vw); /* Responsive font size */
+    }
+    
+
+
+}
+
+@media screen and (max-width: 800px){
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .languages,
+    .follow-us {
+        margin-bottom: 20px;
+    }
+}
