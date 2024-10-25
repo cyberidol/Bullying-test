@@ -1,6 +1,6 @@
 /* Styles for the background image covering the whole viewport */
 .background-image {
-    background-image: url(_images/main%20page.png); 
+    background-image: url(_images/main page.png); 
     background-size: cover;
     background-position: center;
     width: 100vw;
