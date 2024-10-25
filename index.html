@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <!-- Links the external CSS file for styling -->
+        <link rel="stylesheet" href="index.css" />
+        <!-- Links the external JavaScript file for functionality -->
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <!-- Container for the background image and buttons -->
+        <div class="background-image">
+            <!-- Menu button that triggers the toggleMenu function when clicked -->
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <!-- Button to redirect the user to a table, triggers goToTable function -->
+            <button class="blue-btn" onclick="goToTable()">Get Help</button>
+            <!-- Div for circle background design -->
+            <div class="circle-background"></div>
+        <!-- The dropdown menu that appears when the menu button is clicked -->
+        <div id="menu" class="menu">
+            <!-- Buttons in the menu that redirect to specific pages -->
+            <button class="submenu-btn" onclick="window.location.href='student.html'">Student</button>
+            <button class="submenu-btn" onclick="window.location.href='parent.html'">Parent</button>
+            <button class="submenu-btn" onclick="window.location.href='teacher.html'">Teacher</button>
+            <button class="submenu-btn" onclick="window.location.href='professional.html'">Professional</button>
+
+        </div>
+            <!-- Hidden quote text and writer, could be styled to appear dynamically -->
+            <p class="hidden-text"><b>“With ignorance comes fear – from fear comes bigotry. Education is the key to acceptance. ”</b></p>
+            <p class="hidden-writer"><b>Kathleen Patel</b></p>
+        </div>
+        
+        <!-- The form for submitting a bullying complaint, initially hidden -->
+        <div class="form-container" style="display: none;">
+            <h2>Bullying Complaint Form</h2>
+            <form>
+                <!-- Text input for the complainant's name -->
+                <label for="complainant-name">Complainant Name (or Anonymous):</label>
+                <input type="text" id="complainant-name" name="complainant_name" required><br><br>
+
+                <!-- Text input for the victim's name -->
+                <label for="victim-name">Victim's Name:</label>
+                <input type="text" id="victim-name" name="victim_name" required><br><br>
+
+                <!-- Text input for the victim's grade level -->
+                <label for="grade">Victim's Grade:</label>
+                <input type="text" id="grade" name="grade" required><br><br>
+
+                <!-- Text input for the accused person's name -->
+                <label for="accused-name">Accused Name:</label>
+                <input type="text" id="accused-name" name="accused_name" required><br><br>
+
+                <!-- Text input for the location where the incident occurred -->
+                <label for="incident-location">Location of Incident:</label>
+                <input type="text" id="incident-location" name="incident_location" required><br><br>
+
+                <!-- Date input for the date of the incident -->
+                <label for="incident-date">Date of Incident:</label>
+                <input type="date" id="incident-date" name="incident_date" required><br><br>
+
+                <!-- Time input for the time of the incident -->
+                <label for="incident-time">Time of Incident:</label>
+                <input type="time" id="incident-time" name="incident_time"><br><br>
+
+                <!-- Text area for a detailed description of the incident -->
+                <label for="description">Description of Incident:</label>
+                <textarea id="description" name="description" rows="5" required></textarea><br><br>
+
+                <!-- Text input for any witnesses present at the incident -->
+                <label for="witnesses">Witnesses (if any):</label>
+                <input type="text" id="witnesses" name="witnesses"><br><br>
+
+                <!-- File upload input for attaching evidence -->
+                <label for="evidence">Attach Evidence (photos, texts, etc.):</label>
+                <input type="file" id="evidence" name="evidence"><br><br>
+
+                <!-- Submit button to send the form -->
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+        
+    </body>
+</html>
